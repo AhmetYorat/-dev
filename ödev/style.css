@@ -43,6 +43,14 @@ header nav{
     opacity: 0;
 }
 
+.logo img{
+    border-radius: 100%;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @keyframes nav{
     to{
         transform: translateY(0px);
