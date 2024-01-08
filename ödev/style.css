@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;1,400&display=swap');
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    
+}
+
+a{
+    color: white;
+}
+
+header{
+    height: 100px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.06);
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+/* Header Start */
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    transform: translateY(-100px);
+    animation: nav .75s forwards;
+    opacity: 0;
+}
+
+@keyframes nav{
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    column-gap: 30px;
+}
+
+nav ul a{
+    text-decoration: none;
+    transition: color .25s ease;
+
+}
+
+nav ul a:hover{
+    color: #0ba2c0;
+}
+
+nav .menu{
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    font-size: 25px;
+}
+
+
+nav .menu .menu-button{
+    color: #0ba2ce;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 8px 18px;
+    border-radius: 56px;
+    transition: all .25s ease;
+}
+
+nav .menu .menu-button:hover{
+    background-color: #0ba2c0;
+    color: white;
+}
+
+hr{
+    width: 40px;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 150px;
+    border: none;
+    height: 2px;
+    color:#fff;
+    background-color: #fff;
+   
+}
+
+/* Header End */
+
+
+
+/* Section start */
+
+.content{
+    color: white;
+    height: calc(100vh - 100px);
+    padding-top: 150px;
+}
+
+.content h1{
+    font-size: 60px;
+    text-align: center;
+}
+
+
+.content p{
+    font-size: 24px;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.content .links{
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    column-gap: 16px;
+}
+
+.content .links a{
+    background-color: white;
+    padding: 20px;
+    width: 280px;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 56px;
+    transition: all .25s ease-in;
+}
+
+.content .links a:hover{
+    background-color: #0ba2c0;
+    color: white;
+}
+
+.sosyal{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+
+.özgeçmiş{
+    color: white;
+    height: calc(100vh - 100px);
+    padding-top: 50px;
+    
+}
+
+.links{
+    transition: 1s;
+}
+
+
+
+.özgeçmiş h1{
+    font-size: 60px;
+    text-align: center;
+    
+}
+
+
+.özgeçmiş p{
+    font-size: 24px;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.Bilgiler {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:40px; 
+    max-width: 800px;
+    margin: 0 auto; 
+    position: relative;
+    left: 70px;
+}
+
+.bir {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+
+/* Section End */
+
+
+
+/* responsive start */
+
+@media(max-width:576px){
+    .container{
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .menu .menu-button{
+        display: none;
+    }
+
+    .menu ul{
+        column-gap: 20px;
+    }
+    
+    .Bilgiler{
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+}
+
+/* responsive end */
+
